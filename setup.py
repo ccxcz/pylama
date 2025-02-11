@@ -31,6 +31,6 @@ tests=[
             'types-toml'
         ],
         all=OPTIONAL_LINTERS, **{linter: [linter] for linter in OPTIONAL_LINTERS},
-        toml='toml>=2.0.1',
+        toml='tomli>=1.2.3; python_version < "3.11"',
     ),
 )
